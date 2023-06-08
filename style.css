@@ -1,0 +1,151 @@
+* {
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  direction: ltr;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(0, 0%, 98%);
+  justify-content: center;
+}
+body h1, body h2 {
+  color: hsl(234, 12%, 34%);
+}
+body p {
+  color: hsl(229, 6%, 66%);
+  font-size: 15px;
+  font-weight: 400;
+}
+body > h1, body > p {
+  max-width: 570px;
+  text-align: center;
+}
+body > p {
+  margin-bottom: 30px;
+}
+@media only screen and (max-width: 500px) {
+  body > p {
+    font-size: 12px;
+  }
+}
+body > h1 {
+  font-size: 40px;
+}
+@media only screen and (max-width: 500px) {
+  body > h1 {
+    font-size: 28px;
+  }
+}
+body > h1:nth-child(1) {
+  font-weight: 200;
+}
+body > h1:nth-child(2) {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+body .container {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 1230px) {
+  body .container {
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 820px) {
+  body .container {
+    flex-direction: column;
+  }
+}
+body .container section {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+  gap: 30px;
+}
+@media only screen and (max-width: 1231px) {
+  body .container section {
+    flex-direction: row;
+    align-self: flex-start;
+  }
+}
+@media only screen and (max-width: 820px) {
+  body .container section {
+    flex-direction: column;
+    margin: 30px auto;
+    align-self: normal;
+  }
+}
+@media only screen and (max-width: 1231px) {
+  body .container > div {
+    align-self: flex-end;
+  }
+}
+@media only screen and (max-width: 820px) {
+  body .container > div {
+    align-self: normal;
+    margin: 0px auto;
+  }
+}
+@media only screen and (max-width: 400px) {
+  body .container > div {
+    max-width: 350px;
+  }
+}
+body .container div {
+  border-top: 3px solid;
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px -10px hsl(234, 12%, 34%);
+  position: relative;
+  width: 370px;
+  background-color: white;
+  padding: 30px;
+}
+@media only screen and (max-width: 400px) {
+  body .container div {
+    max-width: 320px;
+  }
+}
+@media only screen and (max-width: 820px) {
+  body .container div {
+    align-self: normal;
+    margin: 0px auto;
+  }
+}
+body .container div.Supervisor {
+  border-color: hsl(180, 62%, 55%);
+}
+body .container div.Team_Builder {
+  border-color: hsl(0, 78%, 62%);
+}
+body .container div.Karma {
+  border-color: hsl(34, 97%, 64%);
+}
+body .container div.Calculator {
+  border-color: hsl(212, 86%, 64%);
+}
+body .container div img {
+  margin-top: 30px;
+  margin-left: calc(100% - 60px);
+  background-position: right;
+}
+body .container div h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+body .container div p {
+  line-height: 27px;
+}/*# sourceMappingURL=style.css.map */
